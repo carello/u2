@@ -7,7 +7,8 @@ terraform {
     }
   }
   backend "remote" {
-    hostname     = "app.terraform.io"
+    # I think the hostname is optional (default)
+    #hostname     = "app.terraform.io"
     organization = "carello"
 
     workspaces {
